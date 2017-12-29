@@ -1,5 +1,21 @@
-body {
-    background-image: url("http://all4desktop.com/data_images/original/4235929-cool-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(rgb(201, 14, 14), rgb(241, 159, 5));
+    height: 100vh;
+    text-align: center;
+    font-family: 'tahoma', sans-serif;
+    margin-bottom: 50px;
+  }
+  .output {
+    width: 80%;
+    background: #fff;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    height: 80vh;
+    color: #777;
+    overflow: auto;
+  }
+

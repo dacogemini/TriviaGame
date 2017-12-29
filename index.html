@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets\css\trivia.game.css">
     <title>Trivia Game</title>
 </head>
+
 <body>
-    
+   
+        <header class="header">
+                <h1>QUIZ</h1>
+            </header>
+            <form>
+                <p id="sayHello">
+                    <p>
+                        <script>
+                            var yourName = prompt("What is your Name?");
+                            if (yourName != null) {
+                                document.getElementById("sayHello").innerHTML = "Hello" + "\xa0" + yourName + "\xa0" +
+                                    "Are you ready for your quiz?";
+                            } else {
+                                alert("Please Enter a Name");
+                            }
+                        </script>
+            </form>
+            <fieldset style="width:60%">
+                <p class="question">
+                    <div class="q1">
+                        <h2>1. Which language is best suited for an interview because of its consistent API's?</h2>
+                </p>
+        
+                <ul>
+                    <input class="answer" type="radio" name="q1" value="1">
+                    <label id="correctString1">Python</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>Javascript</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>Ruby</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>PHP</label>
+                </ul>
+                </div>
+                <p class="question">
+                    <div class="q2">
+                        <h2>2. What does API stand for?</h2>
+                </p>
+        
+                <ul>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Application Protocol Interface</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="1">
+                    <label id="correctString2">Application Program Interface</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Applied Program Interface</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Application Protocol Integration</label>
+                </ul>
+                <p class="question">
+                        <div class="q3">
+                            <h2>3. What is a <em>closure?</em></h2>
+                            <ul>
+                                <input class="answer" type="radio" name="q3" value="0">
+                                <label>The correct way to end a function</label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="1">
+                                <label>A command that stops a loop</label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="0">
+                                <label>A method used to check for <em>null</em></label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="0">
+                                <label id="correctString3">A function within a function</label>
+                                </ul>
+            </fieldset>  
+          <button type="button" class="btn btn-danger">Start Game</button>
+                
+          
+        
+
+<!-- JAVASCRIPT -->
+<script src="assets\javascript\trivia.game.js"></script>
+
 </body>
+
 </html>
